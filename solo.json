@@ -1,0 +1,17 @@
+{
+  "run_list": [
+    "recipe[kingsly-certbot::ipsec]"
+  ],
+  "kingsly_certbot": {
+    "config": {
+      "environment": "production",
+      "top_level_domain": "example.com",
+      "sub_domain": "yourvpn",
+      "sentry_dsn": "",
+      "kingsly_server_host": "kingsly.example.com",
+      "kingsly_server_user": "user",
+      "kingsly_server_password": "password",
+      "server_type": "ipsec"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-name 'kingsly_certbot'
+name 'kingsly-certbot'
 maintainer 'GO-JEK Developers'
 maintainer_email 'foss+farm@go-jek.com'
 license 'All Rights Reserved'
