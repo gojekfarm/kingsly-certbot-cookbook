@@ -24,7 +24,7 @@ systemd_unit 'kingsly-certbot.service' do
 
   [Service]
   Type=oneshot
-  Environment="LOG_DIR=/var/log"  
+  Environment="LOG_DIR=/var/log"
   ExecStart=/opt/chef/embedded/bin/kingsly-certbot --config #{config_filepath}
 
   [Install]
@@ -41,7 +41,7 @@ systemd_unit 'kingsly-certbot.timer' do
   After=network.target
 
   [Timer]
-  OnCalendar=*-*-* 12:00:00
+  OnCalendar=#{node["kingsly_certbot"]["cron"]}
 
   [Install]
   WantedBy=multi-user.target
