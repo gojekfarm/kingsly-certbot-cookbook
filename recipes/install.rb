@@ -1,5 +1,5 @@
 # install the gem in chef gemset
-chef_gem 'kingsly_certbot' do
+chef_gem 'kingsly-certbot' do
   version node['kingsly_certbot']['version']
 end
 
