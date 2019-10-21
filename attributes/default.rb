@@ -1,4 +1,4 @@
-default['kingsly_certbot']['version'] = ENV['CERTBOT_GEM_VERSION'] || '0.3.1'
+default['kingsly_certbot']['version'] = ENV['CERTBOT_GEM_VERSION'] || '0.3.3'
 default['kingsly_certbot']['cron'] = '*-*-* 12:00:0'
 default['kingsly_certbot']['config_filepath'] = '/etc/default/kingsly-certbot.conf'
 default['kingsly_certbot']['config']['environment'] = ENV['ENVIRONMENT'] || 'production'
